@@ -6,7 +6,31 @@
     <title>Browser Form</title>
 </head>
 <body>
-    <h1>Hello</h1>
+    <form id="form" novalidate>
+        <fieldset>
+            <label for="email">Email <span>*</span> </label>
+            <input type="text" id="email" name="email" required>
+            <div class="error" id="emailError"></div>
+
+            <label for="country">Country<span>*</span></label>
+            <input type="text" name="country" id="country" required>
+            <div class="error" id="countryError"></div>
+
+            <label for="zip">Zip Code<span>*</span></label>
+            <input type="text" name="zip" id="zip" required>
+            <div class="error" id="zipError"></div>
+
+            <label for="password">Password<span>*</span></label>
+            <input type="password" name="password" id="password" required>
+            <div class="error" id="passwordError"></div>
+
+            <label for="password2">Confirm Password<span>*</span></label>
+            <input type="password" name="password2" id="password2" required>
+            <div class="error" id="passwordError2"></div>
+
+            <button type="submit" id="button">Submit</button>
+        </fieldset>
+    </form>
     <script src="main.js"></script>    
 </body>
 </html>
